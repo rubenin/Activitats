@@ -13,4 +13,16 @@ package E3P1TipusDeDadesCompostes;
  */
 public class E3ComptarAs {
 
+//Hi ha 4 as.
+    public static final char[] array = {'a', 'c', 'z', 'a', 'w', 'a', 'q', 'f', 'c', 'a'};
+
+    public static void main(String[] args) {
+        int comptador = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 'a') {
+                comptador++;
+            }
+        }
+        System.out.println("Hi ha " + comptador + "a's. ");
+    }
 }
