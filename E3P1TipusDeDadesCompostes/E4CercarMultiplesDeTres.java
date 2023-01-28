@@ -22,4 +22,23 @@ package E3P1TipusDeDadesCompostes;
  */
 public class E4CercarMultiplesDeTres {
 
+    public static void main(String[] args) {
+
+        int array[] = {1, 13, 4, 5, 7, 3, 2, 8, 5, 7};
+        int i = 0;
+        int numMultiples = 0;
+
+        while ((numMultiples < 2) && (i < array.length)) {
+            if (array[i] % 3 == 0) {
+                numMultiples++;
+                if (numMultiples == 2) {
+                    System.out.println("El segon múltiple és: " + array[i] + ".");
+                }
+            }
+            i++;
+        }
+        if (numMultiples < 2) {
+            System.out.println("Hi ha menys de 2 múltiples de tres...");
+        }
+    }
 }
